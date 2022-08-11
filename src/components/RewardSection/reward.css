@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     height: 100%;
+   /* gap: 15rem; */
 }
 
 .reward__left{
@@ -84,13 +85,15 @@ line-height: 144%;
     }
 
     .reward__left {
-        width: 100%;
+        width: max-content;
+        display: flex;
+        align-self: center;
         /* height: 400px; */
     }
 
-    .reward__image {
-        /* object-fit: contain; */
-    }
+    /* .reward__image {
+        object-fit: contain;
+    } */
 
     
 }
@@ -103,6 +106,11 @@ line-height: 144%;
 .reward__list--item {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .reward__left {
+        width: 100%;
+        
     }
 }
 

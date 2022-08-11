@@ -7,7 +7,7 @@ import { ReactComponent as AppStore } from "../../assests/icons/apple-icon.svg";
 
 const HeroSection = () => {
   return (
-    <section className="hero">
+    <section className="hero" name='home'>
       <div className="hero__container">
         <div className="hero__left">
           <h4 className="hero__heading">

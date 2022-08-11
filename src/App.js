@@ -1,13 +1,14 @@
 
 import './App.css';
-import { Header, HeroSection, RewardSection } from './components';
+import { Header, HeroSection, RewardSection, Transaction } from './components';
 
 function App() {
   return (
     <>
       <Header />  
       <HeroSection/>
-      <RewardSection/>
+      <RewardSection />
+      <Transaction/>
     </>
   );
 }

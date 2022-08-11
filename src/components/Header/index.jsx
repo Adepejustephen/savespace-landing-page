@@ -6,8 +6,8 @@ import { Button } from '../generalComponents';
 
 const Header = () => {
     return (
-      <header>
-        <div className="header__content">
+      <header >
+        <div className="header__content" >
           <div className="header__logo">
             <img src={Logo} alt="header-logo" />
           </div>
@@ -15,7 +15,14 @@ const Header = () => {
           <nav className="nav__desktop">
             <ul className="nav__desktop--list">
               <li className="nav__desktop--item">
-                <Link to="#" activeClass="link-active">
+                <Link
+                  to="home"
+                  activeClass="link-active"
+                 
+                  smooth={true}
+                 
+                  duration={500}
+                >
                   Home
                 </Link>
               </li>

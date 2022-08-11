@@ -80,7 +80,7 @@
   }
    .hero__right {
     width: 100%;
-    display: none;
+    /* display: none; */
   }
 
   .hero__img {
@@ -95,7 +95,10 @@
 
  
 
-  
+    .hero__right {
+    display: none;
+   
+  }
 
   .hero__left {
     width: 100%;
@@ -106,9 +109,9 @@
     width: 100%;
   }
 
-  .hero__heading span {
-    /* clip-path: none; */
-  }
+  /* .hero__heading span {
+    clip-path: none;
+  } */
 
   .app__btns {
     flex-direction: column;
