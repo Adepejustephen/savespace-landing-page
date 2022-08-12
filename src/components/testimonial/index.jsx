@@ -22,7 +22,7 @@ const Testimonial = () => {
                 to save with discipline.”
               </blockquote>
               <footer>
-                <cite class="author">Ade Lola - Student </cite>{" "}
+                <cite className="author">Ade Lola - Student </cite>{" "}
               </footer>
             </div>
           </div>

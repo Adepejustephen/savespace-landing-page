@@ -1,13 +1,13 @@
 import React from 'react'
 import Logo from '../../assests/images/save-logo.svg'
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 import './header.css'
 import { Button } from '../generalComponents';
 
 const Header = () => {
     return (
-      <header >
-        <div className="header__content" >
+      <header>
+        <div className="header__content">
           <div className="header__logo">
             <img src={Logo} alt="header-logo" />
           </div>
@@ -18,25 +18,25 @@ const Header = () => {
                 <Link
                   to="home"
                   activeClass="link-active"
-                 
+                  spy={true}
                   smooth={true}
-                 
                   duration={500}
+                  // offset={0}
                 >
                   Home
                 </Link>
               </li>
               <li className="nav__desktop--item">
-                <Link to="#">Save</Link>
+                <Link to="save">Save</Link>
               </li>
               <li className="nav__desktop--item">
-                <Link to="#">Business</Link>
+                <Link to="busines">Business</Link>
               </li>
               <li className="nav__desktop--item">
-                <Link to="#">Blog</Link>
+                <Link to="blog">Blog</Link>
               </li>
               <li className="nav__desktop--item">
-                <Link to="#">Contact Us</Link>
+                <Link to="contact">Contact Us</Link>
               </li>
             </ul>
           </nav>
@@ -51,19 +51,19 @@ const Header = () => {
           <nav className="nav__mobile">
             <ul className="nav__mobile--list">
               <li className="mobile__item">
-                <Link to="#">Home</Link>
+                <Link to="home">Home</Link>
               </li>
               <li className="mobile__item">
-                <Link to="#">Save</Link>
+                <Link to="save">Save</Link>
               </li>
               <li className="mobile__item">
-                <Link to="#">Business</Link>
+                <Link to="business">Business</Link>
               </li>
               <li className="mobile__item">
-                <Link to="#">Blog</Link>
+                <Link to="blog">Blog</Link>
               </li>
               <li className="mobile__item">
-                <Link to="#">Contact Us</Link>
+                <Link to="contact">Contact Us</Link>
               </li>
             </ul>
             <div className="mobile__btns">
