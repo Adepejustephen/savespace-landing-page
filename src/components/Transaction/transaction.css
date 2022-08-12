@@ -70,13 +70,20 @@
     width: 100%;
   }
 
-  .heading {
-    font-size: 3.2rem;
-  }
+  
 
   .transactions__right {
     display: flex;
     justify-content: flex-start;
     width: 100%;
   }
+}
+@media screen and (max-width: 600px) {
+
+
+  
+  .heading {
+    font-size: 3.2rem;
+  }
+
 }

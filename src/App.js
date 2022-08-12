@@ -1,6 +1,7 @@
 
 import './App.css';
-import { Header, HeroSection, RewardSection, Transaction } from './components';
+import { Footer, Header, HeroSection, RewardSection, Transaction, Whatelse } from './components';
+import { Testimonial } from './components/testimonial';
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
       <Header />  
       <HeroSection/>
       <RewardSection />
-      <Transaction/>
+      <Transaction />
+      <Whatelse />
+      <Testimonial />
+      <Footer/>
     </>
   );
 }
