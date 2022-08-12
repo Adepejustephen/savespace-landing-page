@@ -20,8 +20,10 @@ flex-direction: column;
 gap: 1.6rem;
 }
 
-.footer__logo {
-
+.footer__logo img {
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 .footer__left--text {
