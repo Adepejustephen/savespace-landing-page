@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../../assests/images/save-logo.svg'
 import { Link } from 'react-scroll';
 import './header.css'
 import { Button } from '../generalComponents';
+import { FaTimes, FaBars } from "react-icons/fa";
 
 const Header = () => {
+  const [openNav, setOpenNav] = useState(false)
+
     return (
       <header>
         <div className="header__content">
@@ -48,33 +51,41 @@ const Header = () => {
               Create Free Account
             </Button>
           </div>
-          <nav className="nav__mobile">
-            <ul className="nav__mobile--list">
-              <li className="mobile__item">
-                <Link to="home">Home</Link>
-              </li>
-              <li className="mobile__item">
-                <Link to="save">Save</Link>
-              </li>
-              <li className="mobile__item">
-                <Link to="business">Business</Link>
-              </li>
-              <li className="mobile__item">
-                <Link to="blog">Blog</Link>
-              </li>
-              <li className="mobile__item">
-                <Link to="contact">Contact Us</Link>
-              </li>
-            </ul>
-            <div className="mobile__btns">
-              <Button className={"noBackground-btn"} type="button">
-                Login
-              </Button>
-              <Button className={"background-btn"} type="button">
-                Create Free Account
-              </Button>
-            </div>
-          </nav>
+          {openNav && (
+            <nav className={openNav ? "nav__mobile--active" : "nav__mobile"}>
+              <ul className="nav__mobile--list">
+                <li className="mobile__item">
+                  <Link to="home">Home</Link>
+                </li>
+                <li className="mobile__item">
+                  <Link to="save">Save</Link>
+                </li>
+                <li className="mobile__item">
+                  <Link to="business">Business</Link>
+                </li>
+                <li className="mobile__item">
+                  <Link to="blog">Blog</Link>
+                </li>
+                <li className="mobile__item">
+                  <Link to="contact">Contact Us</Link>
+                </li>
+              </ul>
+              <div className="mobile__btns">
+                <Button className={"noBackground-btn"} type="button">
+                  Login
+                </Button>
+                <Button className={"background-btn"} type="button">
+                  Create Free Account
+                </Button>
+              </div>
+            </nav>
+          )}
+          <div
+            className={openNav ? "active__toggle" : "toggle__btn"}
+            onClick={() => setOpenNav(!openNav)}
+          >
+            {openNav ? <FaTimes /> : <FaBars />}
+          </div>
         </div>
       </header>
     );
