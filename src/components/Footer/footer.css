@@ -33,12 +33,16 @@ width: 25%;
 
 .footer__logo {
     display: block;
+    width: max-content;
+    
 }
 
 .footer__logo--heading {
 font-weight: 400;
 font-size: 7.2rem;
-/* line-height: 90px; */
+    text-align: center;
+
+line-height: 180%;
 color: #FBFBFB;
 font-family: 'Plaster', cursive;
 
@@ -49,7 +53,7 @@ font-family: 'Plaster', cursive;
 font-style: normal;
 font-weight: 400;
 font-size: 2rem;
-line-height: 25px;
+line-height: 180%;
 color: #FBFBFB;
 
 }
@@ -119,7 +123,7 @@ line-height: 172.8%;
    font-weight: 400;
 font-size: 1.8rem;
 gap: 4px;
-line-height: 25px;
+line-height: 172%;
 color: #FBFBFB; 
 display: flex;
 align-items: center;

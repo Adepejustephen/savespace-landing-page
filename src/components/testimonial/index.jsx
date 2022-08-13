@@ -1,7 +1,7 @@
-import React from 'react'
-import './testimonial.css'
-import frame from '../../assests/images/Frame-159.svg'
-import student from '../../assests/images/student.svg'
+import React from "react";
+import "./testimonial.css";
+import frame from "../../assests/images/Frame-159.svg";
+import student from "../../assests/images/student.svg";
 const Testimonial = () => {
   return (
     <section className="testimonial">
@@ -16,14 +16,16 @@ const Testimonial = () => {
           <div className="testimonial__quoute">
             <img src={student} alt="student" className="quote__image" />
             <div>
-              <blockquote>
-                “SaveSpace helped me reduce my spending habit. I needed money
-                for my house rent so I started saving with SaveSpace, I was able
-                to save with discipline.”
-              </blockquote>
-              <footer>
-                <cite className="author">Ade Lola - Student </cite>{" "}
-              </footer>
+              <p className="quote">
+                <span className="quotemark">“ </span>
+                <span>SaveSpace </span>helped me reduce my spending habit. I
+                needed money for my house rent so I started saving with
+                SaveSpace, I was able to save with discipline.
+                <span className="quotemark"> ”</span>
+              </p>
+              <h4 className="author">
+                <span>Ade Lola -</span> Student
+              </h4>
             </div>
           </div>
         </div>
@@ -33,6 +35,6 @@ const Testimonial = () => {
       </div>
     </section>
   );
-}
+};
 
-export { Testimonial }
+export { Testimonial };

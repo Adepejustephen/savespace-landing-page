@@ -59,10 +59,36 @@
   flex-direction: column;
 }
 
-blockquote {
-  font-weight: 600;
+.quote {
+  font-weight: 400;
   font-size: 2.2rem;
   line-height: 116%;
-
   color: #1e1e1e;
 }
+
+.quote span {
+  font-weight: 500;
+}
+
+.quotemark {
+  font-weight: 600;
+}
+
+
+
+.author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 130%;
+  color: #1e1e1e;
+ margin-top: 1rem;
+
+ 
+}
+
+.author span {
+  font-weight: 600;
+  font-weight: 600;
+}
+
