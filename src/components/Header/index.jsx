@@ -55,26 +55,44 @@ const Header = () => {
             <nav className={openNav ? "nav__mobile--active" : "nav__mobile"}>
               <ul className="nav__mobile--list">
                 <li className="mobile__item">
-                  <Link to="home">Home</Link>
+                  <Link onClick={() => setOpenNav(!openNav)} to="home">
+                    Home
+                  </Link>
                 </li>
                 <li className="mobile__item">
-                  <Link to="save">Save</Link>
+                  <Link to="save" onClick={() => setOpenNav(!openNav)}>
+                    Save
+                  </Link>
                 </li>
                 <li className="mobile__item">
-                  <Link to="business">Business</Link>
+                  <Link to="business" onClick={() => setOpenNav(!openNav)}>
+                    Business
+                  </Link>
                 </li>
                 <li className="mobile__item">
-                  <Link to="blog">Blog</Link>
+                  <Link to="blog" onClick={() => setOpenNav(!openNav)}>
+                    Blog
+                  </Link>
                 </li>
                 <li className="mobile__item">
-                  <Link to="contact">Contact Us</Link>
+                  <Link to="contact" onClick={() => setOpenNav(!openNav)}>
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
               <div className="mobile__btns">
-                <Button className={"noBackground-btn"} type="button">
+                <Button
+                  className={"noBackground-btn"}
+                  type="button"
+                  onClick={() => setOpenNav(!openNav)}
+                >
                   Login
                 </Button>
-                <Button className={"background-btn"} type="button">
+                <Button
+                  className={"background-btn"}
+                  type="button"
+                  onClick={() => setOpenNav(!openNav)}
+                >
                   Create Free Account
                 </Button>
               </div>
