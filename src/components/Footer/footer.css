@@ -34,26 +34,26 @@ width: 25%;
 .footer__logo {
     display: block;
     width: max-content;
+margin-top: -1.6rem;
+
     
 }
 
 .footer__logo--heading {
 font-weight: 400;
 font-size: 7.2rem;
-    text-align: center;
-
-line-height: 180%;
+line-height: 125%;
 color: #FBFBFB;
 font-family: 'Plaster', cursive;
 
 }
 .footer__logo--subheading {
-   /* font-family: 'Marcellus SC'; */
+   
    font-family: 'Marcellus SC', serif;
 font-style: normal;
 font-weight: 400;
 font-size: 2rem;
-line-height: 180%;
+line-height: 125%;
 color: #FBFBFB;
 
 }
@@ -63,6 +63,7 @@ font-weight: 400;
 font-size: 1.6rem;
 line-height: 162%;
 color: #FBFBFB;
+margin-bottom: 2.4rem;
 }
 
 .footer__icons{
