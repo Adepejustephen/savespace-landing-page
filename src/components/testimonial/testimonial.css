@@ -49,9 +49,10 @@
 }
 
 .quote__image {
-  width: 100%;
-  height: 100%;
+ 
   object-fit: cover;
+  width: 100px;
+height: 100px;
 }
 
 .testimonial__quoute > div {
@@ -69,16 +70,12 @@
 .quote span {
   font-weight: 500;
   font-size: 1.8rem;
-
 }
 
 .quotemark {
   font-weight: 600;
   font-size: 2.2rem;
-
 }
-
-
 
 .author {
   font-style: normal;
@@ -86,13 +83,55 @@
   font-size: 2rem;
   line-height: 130%;
   color: #1e1e1e;
- margin-top: 1rem;
-
- 
+  margin-top: 1rem;
 }
 
 .author span {
   font-weight: 600;
-  font-weight: 600;
 }
 
+@media screen and (max-width: 1100px) {
+  .testimonial__container {
+    gap: 5.6rem;
+  }
+
+  .testimonial__left {
+    width: 55%;
+  }
+
+  .heading {
+    font-size: 3.2rem;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+  }
+  .testimonial__quoute {
+    flex-direction: column;
+justify-content: center;
+  }
+
+  .quote {
+    font-size: 1.4rem;
+  }
+
+  .quote span {
+    font-size: 1.6rem;
+  }
+
+  .quotemark {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .testimonial__container {
+    flex-direction: column-reverse;
+  }
+
+   .testimonial__left {
+    width: 100%;
+  }
+
+}
