@@ -80,7 +80,7 @@
   }
    .hero__right {
     width: 100%;
-    /* display: none; */
+    display: none;
   }
 
   .hero__img {
@@ -93,7 +93,11 @@
 @media screen and (max-width: 600px) {
  
 
- 
+ .hero__text {
+
+  font-size: 1.5rem;
+
+}
 
     .hero__right {
     display: none;
